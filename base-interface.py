@@ -18,7 +18,7 @@ from scipy.signal import butter, lfilter
 class guiApp(object):
   def __init__(self):
     self.root = tk.Tk()
-    self.root.tk.call('wm', 'iconphoto', self.root._w, tk.PhotoImage(file='/Users/barua/OneDrive/Documents/Internship/Tkinter/audio-project/headphones.png'))
+    self.root.tk.call('wm', 'iconphoto', self.root._w, tk.PhotoImage(file='./headphones.png'))
     self.root.geometry("600x600")
     self.root.title("Audio Processing Software")
     self.style = ttk.Style().theme_use("xpnative")
@@ -53,7 +53,7 @@ class guiApp(object):
     self.convert_button = ttk.Button(self.tab1, text="Convert", command=self.convert_file)
     self.convert_button.place(relx=.3, rely=.4)
 
-    self.play_button = ttk.Button(self.tab1, text="Play", command=lambda: self.play_file(0))
+    self.play_button = ttk.Button(self.tab1, text='Play', command=lambda: self.play_file(0))
     self.play_button.place(relx=.55, rely=.4)
 
     self.folder_label = ttk.Label(self.tab1, text="Select the folder(s) you wish to \nconvert: ")
@@ -247,6 +247,7 @@ class guiApp(object):
 
     conv_file = AudioSegment.from_file(file=audiofile, format=ext[1:])
     play(conv_file)
+
 
   def modify_volume(self, value):
     song = AudioSegment.from_file(file=file_path, format=ext[1:])
