@@ -10,4 +10,4 @@ The entire GUI is divided into three tabs:
 
 -The third tab is a very basic add removal system that removes ad segments at the beginning and end of the audio file.
 
-The GUI is programmed using a TKinter library and the audio files are processed using pydub and librosa libraries.
+The GUI is programmed using the TKinter library and the audio files are processed using pydub and librosa libraries.
