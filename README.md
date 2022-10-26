@@ -1,4 +1,4 @@
-# stereo-to-ambisonic
+# mono-to-stereo 
 A GUI which gives users the option to convert either a single stereo audio file to an ambisonic audio file 
 or do a batch conversion of several audio files with a few extra features integrated. 
 
